@@ -146,6 +146,16 @@ module.exports = View.extend({
         }
     },
 
+    submit: function(){
+      this.beforeSubmit();
+      this.checkValid();
+      if (!this.valid) {
+          return;
+      }
+
+      this.trigger('submit', this.data);
+    },
+
     reset: function () {
         this._fieldViewsArray.forEach(function (field) {
             if (isFunction(field.reset)) {
