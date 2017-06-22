@@ -128,7 +128,7 @@ Standard <a href="http://ampersandjs.com/learn/view-conventions">view convention
 Sets the provided value on the field matching the provided name.  Throws when invalid field name specified.
 
 
-### getValue `formView.setValue(name)`
+### getValue `formView.getValue(name)`
 
 Gets the value from the associated field matching the provided name.  Throws when invalid field name specified.
 
@@ -211,6 +211,8 @@ console.log(form.data);
 
 ## Changelog
 
+## changelog
+- 6.0.0 - Upgrade to &-view 9.x
 - 5.1.0 - Add `submit` and `valid` events
 - 5.0.0 - Extend `ampersand-view` to add state, adds `setValues()`, `setValue()`, & `getValue()`.  Change to not render() during construction by default.
 - 4.0.0 - (skipped)
